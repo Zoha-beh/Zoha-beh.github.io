@@ -1,5 +1,19 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Source+Serif+Pro&display=swap" rel="stylesheet");
+/*===== Global =====*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width:100vw;
+  height:100vh;
+}
+
+
+
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
