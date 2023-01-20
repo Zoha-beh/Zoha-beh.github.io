@@ -261,8 +261,7 @@ img {
 
 .home__img {
   background-image: url('home.png');
-  height:100%;
-  width:700px;
+  background-size:100% 100%;
 }
 
 /*========== BUTTONS ==========*/
