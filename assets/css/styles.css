@@ -243,7 +243,7 @@ img {
 
 /*========== HOME ==========*/
 .home__container {
-  background-image: url("home.png");
+  
   
 }
 
@@ -258,6 +258,16 @@ img {
   color: var(--title-color);
   margin-bottom: var(--mb-4);
 }
+*{
+   margin:0;
+   padding:0;
+ }
+ .image {
+    background: url("home.png");
+    height: 100vh;
+    background-size: cover;
+    background-repest: no-repeat;
+    background-position: 60%;
 /*========== BUTTONS ==========*/
 .button {
   display: inline-block;
