@@ -260,8 +260,12 @@ img {
 }
 
 .home__img {
-  background-image: url('home.png');
-  background-size:100% 100%;
+  hight:500px;
+  background: url('home.png');
+  baground-repeat; no-repeat;
+  background-position: center;
+  background-size: cover;
+  
 }
 
 /*========== BUTTONS ==========*/
