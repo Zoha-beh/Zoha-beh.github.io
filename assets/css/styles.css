@@ -243,8 +243,8 @@ img {
 
 /*========== HOME ==========*/
 .home__container {
-  
-  
+  height: calc(100vh - var(--header-height));
+  align-content: center;
 }
 
 .home__title {
@@ -258,16 +258,16 @@ img {
   color: var(--title-color);
   margin-bottom: var(--mb-4);
 }
-*{
-   margin:0;
-   padding:0;
- }
- .image {
-    background: url("home.png");
-    height: 100vh;
-    background-size: cover;
-    background-repest: no-repeat;
-    background-position: 60%;
+
+.home__img {
+  hight:500px;
+  background: url('home.png');
+  baground-repeat; no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
 /*========== BUTTONS ==========*/
 .button {
   display: inline-block;
