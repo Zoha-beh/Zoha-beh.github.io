@@ -260,8 +260,8 @@ img {
 }
 
 .home__img {
-  width: 400px;
-  justify-self: cover;
+  width: 100%;
+  justify-self: 100%;
 }
 
 /*========== BUTTONS ==========*/
