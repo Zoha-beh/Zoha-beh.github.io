@@ -262,7 +262,7 @@ img {
 .home__img {
   background-image: url('home.png');
   height:100vh;
-  width:100%;
+  width:400px;
   background-size: cover;
 }
 
