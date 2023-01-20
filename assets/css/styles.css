@@ -243,8 +243,12 @@ img {
 
 /*========== HOME ==========*/
 .home__container {
-  height: calc(100vh - var(--header-height));
-  align-content: center;
+  background-img: url('home.png');
+  height: 100vh;
+  background-repeat:no-repeat;
+  width: 100%;
+  background-size:cover;
+  background-position: center;
 }
 
 .home__title {
@@ -258,18 +262,6 @@ img {
   color: var(--title-color);
   margin-bottom: var(--mb-4);
 }
-
-.home__img {
-  hight:500px;
-  background: url('home.png');
-  baground-repeat; no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 0 8%;
-  position: relative;
-  
-}
-
 /*========== BUTTONS ==========*/
 .button {
   display: inline-block;
