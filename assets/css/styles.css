@@ -262,10 +262,8 @@ img {
 .home__img {
   background-image: url('home.png');
   height:100vh;
-  background-repeat:no-repeat;
   width:100%;
   background-size: cover;
-  background-position: center;
 }
 
 /*========== BUTTONS ==========*/
