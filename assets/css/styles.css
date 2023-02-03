@@ -1,23 +1,23 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Source+Serif+Pro&display=swap" rel="stylesheet");
-/*===== VARIABLES CSS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Roboto+Condensed:ital,wght@1,300&display=swap');/*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
   /*========== Colors ==========*/
-  --first-color: hwb(165 33% 66% / 0.986);
-  --first-color-alt: #048654;
-  --title-color: #393939;
-  --text-color: #707070;
-  --text-color-light: #A6A6A6;
-  --body-color: #FBFEFD;
+  --first-color: hwb(66 36% 3% / 0.986);
+  --first-color-alt: #f60101;
+  --title-color: #f8f1f1;
+  --sub-title-color: hwb(66 36% 3% / 0.986);
+  --text-color: #fcf6f6;
+  --text-color-light: #9c9898;
+  --body-color: #020202;
   --container-color: #FFFFFF;
   /*========== Font and typography ==========*/
-  --body-font: 'Indie Flower', cursive;
+  --body-font: 'Aclonica', sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
+  --normal-font-size: .990rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
   /*========== Font weight ==========*/
@@ -58,9 +58,10 @@ html {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --title-color: #ffffffc9;
-  --text-color: #fdd804;
-  --body-color: #020202;
+  --first-color: hwb(0 1% 99% / 0.986);
+  --title-color: #040404c9;
+  --text-color: #040404;
+  --body-color: #ffffff;
   --container-color: #e3ecec;
 }
 
@@ -220,7 +221,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: .3rem;
-  background: rgba(6, 156, 84, 0.5);
+  background: rgb(255, 248, 248);
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
@@ -243,45 +244,44 @@ img {
 
 /*========== HOME ==========*/
 .home__container {
-  height: calc(100vh - var(--header-height));
-  align-content: center;
-}
-
+  background-image: url(../img/Mori\ bar.jpg);
+  background-repeat: no-repeat;
+  border-radius:.5rem;
+  margin-top: 75px;
+background-size: cover;}
 .home__title {
   font-size: var(--biggest-font-size);
-  color: var(--first-color);
+  text-shadow: 3px 1.5px 10px #4c4c4a;
+  color: #f8f2f2;
   margin-bottom: var(--mb-1);
 }
-
 .home__subtitle {
-  font-size: var(--h1-font-size);
-  color: var(--title-color);
-  margin-bottom: var(--mb-4);
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: left;
+  font-size: var(--h2-font-size);
+  color: var(--sub-title-color);
+  margin-bottom: var(--mb-6);
 }
-
 .home__img {
-  hight:500px;
-  background: url('home.png');
-  baground-repeat; no-repeat;
-  background-position: center;
-  background-size: cover;
-  
+  width: 300px;
+  border-radius:.5rem;
+  justify-self: center;
 }
-
 /*========== BUTTONS ==========*/
 .button {
+  font-family: 'Aclonica', sans-serif;
+  text-align: center;
+  font-size: medium;
   display: inline-block;
-  background-color: var(--first-color);
-  color: #FFF;
-  padding: .75rem 1rem;
+  background-color: var(--first-color-alt);
+  color: rgb(245, 244, 243);
+  padding: .20rem 1rem;
   border-radius: .5rem;
   transition: .3s;
 }
-
 .button:hover {
   background-color: var(--first-color-alt);
 }
-
 /*========== ABOUT ==========*/
 .about__data {
   text-align: center;
@@ -293,7 +293,7 @@ img {
 
 .about__img {
   width: 280px;
-  border-radius: .5rem;
+  border-radius:.5rem;
   justify-self: center;
 }
 
@@ -343,7 +343,8 @@ img {
 .menu__img {
   width: 100px;
   align-self: center;
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
+  margin-left: 10px;
 }
 
 .menu__name, .menu__preci {
@@ -396,7 +397,7 @@ img {
   justify-self: center;
 }
 
-/*========== CONTACT ==========*/
+/*========== CT ==========*/
 .contact__container {
   text-align: center;
 }
@@ -434,10 +435,9 @@ img {
   color: var(--title-color);
   margin-bottom: var(--mb-2);
 }
-
 .footer__link {
   display: inline-block;
-  color: var(--text-color);
+  color: #d41717;
   margin-bottom: var(--mb-1);
 }
 
@@ -544,3 +544,4 @@ img {
     height: 640px;
   }
 }
+
